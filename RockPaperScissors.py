@@ -9,7 +9,12 @@ rounds = 0
 
 import random     #Imports a random choice
 
-while True:
+# while True:
+x = 0
+UserCounter = 0
+ComputerCounter = 0
+
+while x < 3:
 
     ComputerChoice =  random.choice(["rock", "paper", "scissors"])
     UserChoice = input("Choose ROCK, PAPER, OR SCISSORS:")
@@ -22,24 +27,34 @@ while True:
     elif ComputerChoice == "rock":
         if UserChoice == "paper":
             print("You Win!")
+            UserCounter += 1
+
         else:
             print("You Loose!")
+            ComputerCounter += 1
 
     elif ComputerChoice == "paper":
         if UserChoice == "scissors":
-
             print("You Win!")
+            UserCounter += 1
+
         else:
             print("You Loose!")
+            ComputerCounter += 1
 
     elif ComputerChoice == "scissors":
         if UserChoice == "rock":
             print("You Win!")
+            UserCounter += 1
+
         else:
             print("You Loose!")
+            ComputerCounter += 1
 
-    rounds += 1
-    if rounds == 3:
-        break
+    x = x + 1
+print(ComputerCounter, UserCounter)
+    # rounds += 1
+    # if rounds == 3:
+        # break
 
 # if the computer wins add 1 point to the computer, but if the user wins add 1 point to the user
