@@ -10,6 +10,7 @@ rounds = 0
 import random     #Imports a random choice
 
 while True:
+
     ComputerChoice =  random.choice(["rock", "paper", "scissors"])
     UserChoice = input("Choose ROCK, PAPER, OR SCISSORS:")
     print("\nUserChoice:", UserChoice, "\nComputerChoice:", ComputerChoice, "\n")
