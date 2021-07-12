@@ -14,7 +14,8 @@ x = 0
 UserCounter = 0
 ComputerCounter = 0
 
-while x < 3:
+# while x < 3:
+for x in range(3):
 
     ComputerChoice =  random.choice(["rock", "paper", "scissors"])
     UserChoice = input("Choose ROCK, PAPER, OR SCISSORS:")
@@ -51,8 +52,17 @@ while x < 3:
             print("You Loose!")
             ComputerCounter += 1
 
-    x = x + 1
+    # x += 1
 print(ComputerCounter, UserCounter)
+
+if UserCounter == 2:
+    print("You Won the Game!")
+elif ComputerCounter == 2:
+    print("You lost the game:(")
+elif ComputerCounter == UserCounter:
+    print("This game is a tie")
+
+
     # rounds += 1
     # if rounds == 3:
         # break
