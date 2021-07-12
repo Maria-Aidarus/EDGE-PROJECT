@@ -5,15 +5,14 @@ print("These are the rules of the game:\n"
        "Scisors cuts Paper\n"
        "Paper covers the Rock\n")
 
+rounds = 0
+
 import random
 
-
-ComputerChoice =  random.choice(["rock", "paper", "scissors"])
-UserChoice = input("Choose ROCK, PAPER, OR SCISSORS: ")
-print("UserChoice:", UserChoice, "\nComputerChoice:", ComputerChoice)
-
-
 while True:
+    ComputerChoice =  random.choice(["rock", "paper", "scissors"])
+    UserChoice = input("Choose ROCK, PAPER, OR SCISSORS: ")
+    print("UserChoice:", UserChoice, "\nComputerChoice:", ComputerChoice)
 
     if ComputerChoice == UserChoice:
         print("This is a tie, choose again.")
@@ -37,4 +36,8 @@ while True:
             print("You Win!")
         else:
             print("You Loose!")
-    break
+
+    rounds += 1
+    if rounds == 2:
+        break
+
