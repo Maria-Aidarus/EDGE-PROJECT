@@ -7,6 +7,7 @@ print("These are the rules of the game:\n"
 
 import random
 
+
 ComputerChoice =  random.choice(["rock", "paper", "scissors"])
 UserChoice = input("Choose ROCK, PAPER, OR SCISSORS: ")
 print("UserChoice:", UserChoice, "\nComputerChoice:", ComputerChoice)
@@ -26,6 +27,7 @@ while True:
 
     elif ComputerChoice == "paper":
         if UserChoice == "scissors":
+
             print("You Win!")
         else:
             print("You Loose!")
