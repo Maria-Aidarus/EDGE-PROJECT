@@ -42,3 +42,4 @@ while True:
     if rounds == 3:
         break
 
+# if the computer wins add 1 point to the computer, but if the user wins add 1 point to the user
