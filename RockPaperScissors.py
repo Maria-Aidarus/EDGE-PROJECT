@@ -5,7 +5,7 @@ print("These are the rules of the game:\n"
        "Scisors cuts Paper\n"
        "Paper covers the Rock\n")
 
-rounds = 0
+# rounds = 0
 
 import random     #Imports a random choice
 
@@ -56,9 +56,11 @@ for x in range(3):
 print(ComputerCounter, UserCounter)
 
 if UserCounter == 2:
-    print("You Won the Game!")
+    print("You Won the Game! :)","\U0001f600")
+
 elif ComputerCounter == 2:
-    print("You lost the game:(")
+    print("You lost the game.", "\U0001F62C")
+
 elif ComputerCounter == UserCounter:
     print("This game is a tie")
 
