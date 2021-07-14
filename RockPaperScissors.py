@@ -18,9 +18,6 @@ for x in range(3):
     UserChoice = input("Choose ROCK, PAPER, OR SCISSORS:")
     print("\nUserChoice:", UserChoice, "\nComputerChoice:", ComputerChoice, "\n")
 
-    # while UserChoice != "rock" or UserChoice != "paper" or UserChoice != "scissors":
-    #     AskAgain = input("Choose a valid input: choose ROCK, PAPER, OR SCISSORS:")
-
     if ComputerChoice == UserChoice:
         print("This is a tie.")
 
@@ -48,6 +45,8 @@ for x in range(3):
             print("You lost this round.", "\U0001F612")
             ComputerCounter += 1
 
+while UserChoice != "rock" or UserChoice != "paper" or UserChoice != "scissors":
+    AskAgain = input("Choose a valid input: choose ROCK, PAPER, OR SCISSORS:")
 
 print("\nComputerCounter:", ComputerCounter, "\nUserCounter:", UserCounter)
 
