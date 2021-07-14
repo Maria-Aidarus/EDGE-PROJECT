@@ -1,4 +1,3 @@
-
 print("Welcome to the ROCK, PAPER, SCISSORS game!!!\n")
 print("These are the rules of the game:\n"
        "Rock breaks Scissors\n"
@@ -23,45 +22,44 @@ for x in range(3):   #Runs for three rounds
     UserChoice = input("Choose ROCK, PAPER, OR SCISSORS:")
     print("\nUserChoice:", UserChoice, "\nComputerChoice:", ComputerChoice, "\n")
 
+    # if UserChoice != "rock" or UserChoice != "paper" or UserChoice != "scissors":
+    #     UserChoice = input("Choose ROCK, PAPER, OR SCISSORS:")
+
     if ComputerChoice == UserChoice:
         print("This is a tie.\n")
         # UserChoice = input("Choose ROCK, PAPER, OR SCISSORS: ")
 
     elif ComputerChoice == "rock":
         if UserChoice == "paper":
-            print("You won this round!")
+            print("You won this round!","\U0001f600")
             UserCounter += 1
-
         else:
-            print("You Loose!")
+            print("You lost this round.", "\U0001F612")
             ComputerCounter += 1
 
     elif ComputerChoice == "paper":
         if UserChoice == "scissors":
-            print("You won this round!")
+            print("You won this round!","\U0001f600")
             UserCounter += 1
-
         else:
-            print("You Loose!")
+            print("You lost this round.", "\U0001F612")
             ComputerCounter += 1
 
     elif ComputerChoice == "scissors":
         if UserChoice == "rock":
-            print(""You won this round!"")
+            print("You won this round!","\U0001f600")
             UserCounter += 1
-
         else:
-            print("You Loose!")
+            print("You lost this round.", "\U0001F612")
             ComputerCounter += 1
 
     # x += 1
 print(ComputerCounter, UserCounter)
-
 if UserCounter >= 2:
-    print("You Won the Game! :)","\U0001f600")
+    print("You Won the Game!", "U0001F389")
 
 elif ComputerCounter >= 2:
-    print("You lost the game.", "\U0001F612")
+    print("You lost the game.")
 
 # elif ComputerCounter == UserCounter:
 #     print("This game is a tie")
