@@ -45,8 +45,7 @@ for x in range(3):
             print("You lost this round.", "\U0001F612")
             ComputerCounter += 1
 
-while UserChoice != "rock" or UserChoice != "paper" or UserChoice != "scissors":
-    AskAgain = input("Choose a valid input: choose ROCK, PAPER, OR SCISSORS:")
+
 
 print("\nComputerCounter:", ComputerCounter, "\nUserCounter:", UserCounter)
 
@@ -56,5 +55,3 @@ elif ComputerCounter >= 2:
     print("You lost the game.")
 elif ComputerCounter == 0 or 1 and UserCounter == 0 or 1:
     print("Nobody has won this game")
-
-
