@@ -26,7 +26,7 @@ for x in range(3):   #Runs for three rounds
     #     UserChoice = input("Choose ROCK, PAPER, OR SCISSORS:")
 
     if ComputerChoice == UserChoice:
-        print("This is a tie.\n")
+        print("This is a tie.")
         # UserChoice = input("Choose ROCK, PAPER, OR SCISSORS: ")
 
     elif ComputerChoice == "rock":
@@ -54,12 +54,15 @@ for x in range(3):   #Runs for three rounds
             ComputerCounter += 1
 
     # x += 1
-print(ComputerCounter, UserCounter)
+print("\nComputerCounter:", ComputerCounter, "UserCounter:", UserCounter)
+
 if UserCounter >= 2:
     print("You Won the Game!", "U0001F389")
 
 elif ComputerCounter >= 2:
     print("You lost the game.")
+elif ComputerCounter == 0 or 1 and UserCounter == 0 or 1:
+    print("Nobody has won this game")
 
 # elif ComputerCounter == UserCounter:
 #     print("This game is a tie")
