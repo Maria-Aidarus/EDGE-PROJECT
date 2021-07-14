@@ -54,11 +54,10 @@ for x in range(3):   #Runs for three rounds
             ComputerCounter += 1
 
     # x += 1
-print("\nComputerCounter:", ComputerCounter, "UserCounter:", UserCounter)
+print("\nComputerCounter:", ComputerCounter, "\nUserCounter:", UserCounter)
 
 if UserCounter >= 2:
-    print("You Won the Game!", "U0001F389")
-
+    print("You WON the Game!", "U0001F389")
 elif ComputerCounter >= 2:
     print("You lost the game.")
 elif ComputerCounter == 0 or 1 and UserCounter == 0 or 1:
